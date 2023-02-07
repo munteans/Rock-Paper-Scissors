@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors Game</h1>
+
+    <p class="button">
+      <button data-counter-button="rock">
+        <p class="far fa-hand-rock"></p>
+        <p>Rock</p>
+      </button>
+      <button data-counter-button="paper">
+        <p class="far fa-hand-paper"></p>
+        <p>Paper</p>
+      </button>
+      <button data-counter-button="scissors">
+        <p class="far fa-hand-scissors"></p>
+        <p>Scissors</p>
+      </button>
+    </p>
+
+    <div class="result">
+      <h2><span data-heading-result></span></h2>
+    </div>
+
+    <div class="counter-container">
+      <p>You: <output data-counter-wins>0</output></p>
+      <p>Total games: <output data-counter-total>0</output></p>
+      <p>Computer: <output data-counter-losses>0</output></p>
+    </div>
+  </body>
+</html>
